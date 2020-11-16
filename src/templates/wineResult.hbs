@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="action-menu d-flex flex-row justify-content-end pt-3">
+        <button class="edit-wine" id="{{ id }}" data-toggle="modal" data-target="#edit-wine-modal-{{ id }}">
+            <i class="text-right far fa-edit"></i>
+        </button>
+        <button class="delete-wine" id="{{ id }}">
+            <i class="text-right far fa-trash-alt mx-2"></i>
+        </button>
+    </div>
+    <img class="card-img-top" src="{{ picture }}" alt="Card image cap">
+    <a href="#show-wine-modal{{ id }}" data-toggle="modal" data-target="#show-wine-modal{{ id }}">
+        <div class="card-body">
+            <span class="price">$ {{ price }}</span>
+            <h5 class="card-title">{{ name }}</h5>
+            <div class="location">
+                <span class="country">{{ country }}</span> | <span class="region"><strong>{{ region }}</strong></span>
+            </div>
+            <p class="card-text">{{ description }}</p>
+            <p class="card-text"><small class="text-muted">{{ year }}: {{grapes}}</p>
+        </div>
+    </a>
+</div>
