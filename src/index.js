@@ -117,54 +117,54 @@ window.addEventListener("hashchange", setRoute);
 
 //             }  
 
-//              //Edit Wine 
-//             for (var i = 0; i < editButtons.length; i++) {
-//                 editButtons[i].addEventListener('click',function(){
+             //Edit Wine 
+            // for (var i = 0; i < editButtons.length; i++) {
+            //     editButtons[i].addEventListener('click',function(){
                     
-//                     var baseUrl = "http://myapi-profstream.herokuapp.com/api/46dbf6/wines/";
-//                     var wineId = this.id;
+            //         var baseUrl = "http://myapi-profstream.herokuapp.com/api/46dbf6/wines/";
+            //         var wineId = this.id;
 
-//                     // append wine id to element id 
-//                     wineEditModal = `${wineEditModal}-${wineId}`
-//                     console.log(wineEditModal);
+            //         // append wine id to element id 
+            //         wineEditModal = `${wineEditModal}-${wineId}`
+            //         console.log(wineEditModal);
 
-//                     // update modal id to id with wine id appended
-//                     document
-//                     .getElementById("edit-wine-modal")
-//                     .setAttribute('id', `${wineEditModal}`);
+            //         // update modal id to id with wine id appended
+            //         document
+            //         .getElementById("edit-wine-modal")
+            //         .setAttribute('id', `${wineEditModal}`);
                     
 
-//                     // Grab wine that should be edited
-//                     axios
-//                     .get(`${baseUrl}${wineId}`)
-//                     .then(function(response){
-//                         let wineEdit = response.data;
+            //         // Grab wine that should be edited
+            //         axios
+            //         .get(`${baseUrl}${wineId}`)
+            //         .then(function(response){
+            //             let wineEdit = response.data;
 
-//                             var wineEditHtml = wineEditTemplateFunction({
-//                                 id: wineEdit.id,
-//                                 name: wineEdit.name,
-//                                 year: wineEdit.year,
-//                                 grapes: wineEdit.grapes,
-//                                 country: wineEdit.country,
-//                                 region: wineEdit.region,
-//                                 description: wineEdit.description,
-//                                 price: wineEdit.price,            
-//                                 picture: wineEdit.picture               
-//                             });
+            //                 var wineEditHtml = wineEditTemplateFunction({
+            //                     id: wineEdit.id,
+            //                     name: wineEdit.name,
+            //                     year: wineEdit.year,
+            //                     grapes: wineEdit.grapes,
+            //                     country: wineEdit.country,
+            //                     region: wineEdit.region,
+            //                     description: wineEdit.description,
+            //                     price: wineEdit.price,            
+            //                     picture: wineEdit.picture               
+            //                 });
                 
-//                             wineEditForm
-//                             .innerHTML += wineEditHtml;  
+            //                 wineEditForm
+            //                 .innerHTML += wineEditHtml;  
                            
-//                     })
-//                     .catch(error => {
-//                         console.log(error)
-//                         alert(error)
-//                     });
+            //         })
+            //         .catch(error => {
+            //             console.log(error)
+            //             alert(error)
+            //         });
 
-//                 });  
+            //     });  
 
-//             }
-//     });
+            // }
+   //  });
     
 
 //       // add new wine; updated api; update cards

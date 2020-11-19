@@ -1,8 +1,5 @@
-<form id="wine-edit">
+<form id="edit-wine-form">
     <div class="modal-body">
-        <div class="form-group">
-            <input type="hidden" id="editId" value="{{ id }}">
-        </div>
         <div class="form-group">
             <label class="mb-0" for="editName">Name</label>
             <input type="text" class="form-control form-control-sm" id="editName" value="{{ name }}">
@@ -38,6 +35,6 @@
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-        <button type="" class="btn btn-purple">Update Wine</button>
+        <button id="update-wine-button" type="submit" class="btn btn-purple">Update Wine</button>
     </div>
 </form>
