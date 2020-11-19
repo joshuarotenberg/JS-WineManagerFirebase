@@ -1,0 +1,40 @@
+<form id="edit-wine-form">
+    <div class="modal-body">
+        <div class="form-group">
+            <label class="mb-0" for="editName">Name</label>
+            <input type="text" class="form-control form-control-sm" id="editName" value="{{ name }}">
+        </div>
+        <div class="form-group">
+            <label class="mb-0" for="editYear">Year</label>
+            <input type="text" class="form-control form-control-sm" id="editYear" value="{{ year }}">
+        </div>
+        <div class="form-group">
+            <label class="mb-0" for="editGrapes">Grapes</label>
+            <input type="text" class="form-control form-control-sm" id="editGrapes" value="{{ grapes }}">
+        </div>
+        <div class="form-group">
+            <label class="mb-0" for="editCountry">Country</label>
+            <input type="text" class="form-control form-control-sm" id="editCountry" value="{{ country }}">
+        </div>
+        <div class="form-group">
+            <label class="mb-0" for="editRegion">Region</label>
+            <input type="text" class="form-control form-control-sm" id="editRegion" value="{{ region }}">
+        </div>
+        <div class="form-group">
+            <label class="mb-0" for="editPrice">Price</label>
+            <input type="text" class="form-control form-control-sm" id="editPrice" value="{{ price }}">
+        </div>
+        <div class="form-group">
+            <label class="mb-0" for="editPicture">Picture</label>
+            <input type="text" class="form-control form-control-sm" id="editPicture" value="{{ picture }}">
+        </div>
+        <div class="form-group">
+            <label class="mb-0" for="editDescription">Description</label>
+            <textarea class="form-control" id="editDescription">{{ description }}</textarea>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+        <button id="update-wine-button" type="submit" class="btn btn-purple">Update Wine</button>
+    </div>
+</form>
